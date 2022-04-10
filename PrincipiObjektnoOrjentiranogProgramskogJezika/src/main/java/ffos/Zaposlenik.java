@@ -28,8 +28,6 @@ public class Zaposlenik extends Osoba{
         setIme(ime);
     }    
   
-
-    
     @Override
     public void pozdrav() {
         System.out.println("Dobar dan!");

@@ -5,12 +5,18 @@
  */
 package ffos;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author anja0
  */
 public class Start{
     public static void main(String[] args) {
+        
+        
+        
+        
  /*       Osoba o = new Osoba();
         o.setIme("Matija");
         o.setPrezime("Skrletović");
@@ -33,6 +39,12 @@ public class Start{
         Zaposlenik z = new Zaposlenik();
         z.setIme("Ana");
         z.setPrezime("Zimska");
+        try {
+           z.setGodinaRodjenja(Integer.parseInt(JOptionPane.showInputDialog("ups!"))); 
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        
         z.setGodinaRodjenja(23);
         z.pozdrav();
         

@@ -36,7 +36,12 @@ public class Start{
         
         
         Docent d = new Docent();
-        System.out.println(d.getIme() + " " + d.getPrezime());
+        d.setIme("Adrian");
+        d.setPrezime("Adrić");
+        d.setBroj(1);
+        d.setKatedra("Odsjek za informacijske znanosti");
+        d.setStudent(false);
+        System.out.println(d.getIme() + " " + d.getPrezime() + " " + d.getBroj());
         
         
     }

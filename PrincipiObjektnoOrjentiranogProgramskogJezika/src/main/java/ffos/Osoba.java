@@ -9,12 +9,14 @@ package ffos;
  *
  * @author anja0
  */
-public class Osoba {
+public abstract class Osoba {
     private String ime;
     private String prezime;
     private int godinaRodjenja;
     protected boolean student;
             int broj;
+            
+    public abstract void pozdrav();
 
     public String getIme() {
         return ime;

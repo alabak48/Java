@@ -19,5 +19,22 @@ public class Zaposlenik extends Osoba{
     public void setKatedra(String Katedra) {
         this.Katedra = Katedra;
     }
+
+    public Zaposlenik() {
+    }
+    
+  public Zaposlenik(String prezime, String ime){
+        setPrezime(prezime);
+        setIme(ime);
+    }    
+  
+
+    
+    @Override
+    public void pozdrav() {
+        System.out.println("Dobar dan!");
+    }
+
+    
     
 }

@@ -15,7 +15,7 @@ public class Kolegij {
 
     public Kolegij(String naziv, String ime, String prezime) {
         this.naziv = naziv;
-        izvodac = new Osoba(prezime, ime);
+        izvodac = new Zaposlenik(prezime, ime);
     }
      
     public String getNaziv() {

@@ -11,7 +11,7 @@ package ffos;
  */
 public class Start{
     public static void main(String[] args) {
-        Osoba o = new Osoba();
+ /*       Osoba o = new Osoba();
         o.setIme("Matija");
         o.setPrezime("Skrletović");
         o.setGodinaRodjenja(26);
@@ -25,14 +25,16 @@ public class Start{
         o.setStudent(true);
         //System.out.println(o.getIme() + " " + o.getPrezime() + " " + o.getGodinaRodjenja() + " " + o.isStudent());
         //System.out.println(o.getIme() + " " + o.getPrezime() + " " + o.getGodinaRodjenja() + " " + o.isStudent());
+*/
         
         Kolegij k = new Kolegij("Programiranje", "Perić", "Pero");
         //System.out.println(k.getIzvodac().getIme());
         
         Zaposlenik z = new Zaposlenik();
-        o.setIme("Ana");
-        o.setPrezime("Zimska");
-        o.setGodinaRodjenja(23);
+        z.setIme("Ana");
+        z.setPrezime("Zimska");
+        z.setGodinaRodjenja(23);
+        z.pozdrav();
         
         
         Docent d = new Docent();
@@ -41,6 +43,7 @@ public class Start{
         d.setBroj(1);
         d.setKatedra("Odsjek za informacijske znanosti");
         d.setStudent(false);
+        d.pozdrav();
         System.out.println(d.getIme() + " " + d.getPrezime() + " " + d.getBroj());
         
         

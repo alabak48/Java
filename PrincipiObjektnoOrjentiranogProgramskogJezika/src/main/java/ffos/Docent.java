@@ -24,4 +24,10 @@ public class Docent extends Zaposlenik{
     public void setBrojRadova(int BrojRadova) {
         this.BrojRadova = BrojRadova;
     }
+    
+    @Override
+    public void pozdrav(){
+        System.out.println("hi!");
+    }
+
 }

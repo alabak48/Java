@@ -18,8 +18,6 @@ public class Kolegij {
         izvodac = new Osoba(prezime, ime);
     }
      
-   
-
     public String getNaziv() {
         return naziv;
     }

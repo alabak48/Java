@@ -16,17 +16,28 @@ public class Start{
         o.setPrezime("Skrletović");
         o.setGodinaRodjenja(26);
         o.setStudent(false);
-        System.out.println(o.getIme() + " " + o.getPrezime() + " " + o.getGodinaRodjenja() + " " + o.isStudent());
+        //System.out.println(o.getIme() + " " + o.getPrezime() + " " + o.getGodinaRodjenja() + " " + o.isStudent());
     
         o = new Osoba();
-         o.setIme("Matija");
+        o.setIme("Matija");
         o.setPrezime("Labak");
         o.setGodinaRodjenja(31);
         o.setStudent(true);
-        System.out.println(o.getIme() + " " + o.getPrezime() + " " + o.getGodinaRodjenja() + " " + o.isStudent());
-        System.out.println(o.getIme() + " " + o.getPrezime() + " " + o.getGodinaRodjenja() + " " + o.isStudent());
+        //System.out.println(o.getIme() + " " + o.getPrezime() + " " + o.getGodinaRodjenja() + " " + o.isStudent());
+        //System.out.println(o.getIme() + " " + o.getPrezime() + " " + o.getGodinaRodjenja() + " " + o.isStudent());
         
         Kolegij k = new Kolegij("Programiranje", "Perić", "Pero");
-        System.out.println(k.getIzvodac().getIme());
+        //System.out.println(k.getIzvodac().getIme());
+        
+        Zaposlenik z = new Zaposlenik();
+        o.setIme("Ana");
+        o.setPrezime("Zimska");
+        o.setGodinaRodjenja(23);
+        
+        
+        Docent d = new Docent();
+        System.out.println(d.getIme() + " " + d.getPrezime());
+        
+        
     }
 }

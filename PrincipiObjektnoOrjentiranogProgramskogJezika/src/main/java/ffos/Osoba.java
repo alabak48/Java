@@ -13,27 +13,8 @@ public class Osoba {
     private String ime;
     private String prezime;
     private int godinaRodjenja;
-    private boolean student;
-
-    public Osoba() {
-    }
-    
-    
-
-    public Osoba(String ime, String prezime, int godinaRodjenja, boolean student) {
-        this.ime = ime;
-        this.prezime = prezime;
-        this.godinaRodjenja = godinaRodjenja;
-        this.student = student;
-    }
-    
-    
-
-    public Osoba(String ime, String prezime) {
-        this.ime = ime;
-        this.prezime = prezime;
-    }
-    
+    protected boolean student;
+            int broj;
 
     public String getIme() {
         return ime;
@@ -66,5 +47,35 @@ public class Osoba {
     public void setStudent(boolean student) {
         this.student = student;
     }
+
+    public int getBroj() {
+        return broj;
+    }
+
+    public void setBroj(int broj) {
+        this.broj = broj;
+    }
+
+  
+    public Osoba() {
+    }
+    
+
+    public Osoba(String ime, String prezime, int godinaRodjenja, boolean student) {
+        this.ime = ime;
+        this.prezime = prezime;
+        this.godinaRodjenja = godinaRodjenja;
+        this.student = student;
+    }
+    
+    
+
+    public Osoba(String ime, String prezime) {
+        this.ime = ime;
+        this.prezime = prezime;
+    }
+    
+
+    
     
 }

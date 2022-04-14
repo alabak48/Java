@@ -58,6 +58,10 @@ public class Matrica {
             niz[i][3] = ++x;
         }
         
+        for (int i = 2; i >= 2; i--) {
+            niz[2][i] = ++x;
+        }
+        
                 for (int i =0;i<niz.length;i++) {
                      System.out.println(Arrays.toString(niz[i]));
                          }

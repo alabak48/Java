@@ -5,6 +5,7 @@
  */
 package ffos.ciklicnamatrica;
 
+import java.awt.BorderLayout;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
@@ -12,19 +13,30 @@ import java.util.Arrays;
  *
  * @author anja0
  */
-
- 
 public class Matrica {
+
     public static void main(String[] args) {
-        
-       int [][] niz = new int[5][5];
-       
-       niz [4][4] = 1;
+
+        int[][] niz = new int[5][5];
+        int x = 0;
+        /* niz [4][4] = 1;
        niz [4][3] = 2;
        niz [4][2] = 3;
        niz [4][1] = 4;
        niz [4][0] = 5;
-       
+         */
+
+        for (int i = 4; i >= 0; i--) {
+            niz[4][i] = ++x;
+        }
+
+        for (int i =0;i<niz.length;i++) {
+            System.out.println(Arrays.toString(niz[i]));
+        }
+    }
+}
+        
+/*
        niz [3][0] = 6;
        niz [2][0] = 7;
        niz [1][0] = 8;
@@ -52,12 +64,4 @@ public class Matrica {
        niz [2][3] = 24;
        
        niz [2][2] = 25;
-       
-       for(int i=0;i<niz.length;i++){
-           System.out.println(Arrays.toString(niz[i]));
-           
-       }
-    }
-
-
-}
+ */

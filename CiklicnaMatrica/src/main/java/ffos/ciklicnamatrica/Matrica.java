@@ -30,9 +30,14 @@ public class Matrica {
             niz[4][i] = ++x;
         }
         
-        for (int i = 4; i >= 0; i--) {
-            niz[i][0] = x++;
+        for (int i = 3; i >= 0; i--) {
+            niz[i][0] = ++x;
         }
+        
+        for (int i = 1; i<=4;i++) {
+            niz[0][i] = ++x;
+        }
+        
         
         for (int i =0;i<niz.length;i++) {
             System.out.println(Arrays.toString(niz[i]));
